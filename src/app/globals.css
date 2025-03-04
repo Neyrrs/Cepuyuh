@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f0eeee;
+  --foreground: #171717;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+body {
+  background: var(--background);
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
