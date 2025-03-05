@@ -13,4 +13,12 @@ body {
   background: var(--background);
   color: black;
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.landingPage{
+  background-image: url('../../public/Landingpage.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
