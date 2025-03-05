@@ -17,7 +17,7 @@ export default function Home() {
         </div>
       </div>
       
-      <div className="flex-wrap h-fit flex gap-x-5 gap-y-8 md:gap-8 px-5">
+      <div className="flex-wrap h-fit flex gap-x-3 gap-y-8 md:gap-8 px-5">
         {[...Array(4)].map((_, index) => (
           <PrimaryCard 
             key={index} 
@@ -30,9 +30,9 @@ export default function Home() {
         ))}
       </div>
 
-      <div className="flex-wrap flex gap-10 py-10 md:gap-8 bg-white h-fit w-full px-5 flex-col">
+      <div className="flex-wrap flex gap-8 py-10 md:gap-8 bg-white h-fit w-full px-5 flex-col">
         <h1 className="text-3xl font-semibold">Our Gallery</h1>
-        <div className="w-fit flex flex-wrap gap-2 md:gap-8 gap-y-4">
+        <div className="w-fit flex flex-wrap gap-2 md:gap-8 gap-y-2">
           {[...Array(5)].map((_, index) => (
             <ActionCard 
               key={index} 
