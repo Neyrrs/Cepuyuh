@@ -17,7 +17,7 @@ export default function Home() {
         </div>
       </div>
       
-      <div className="flex-wrap h-fit flex gap-x-3 gap-y-8 md:gap-8 px-5">
+      <div className="flex-wrap h-fit flex gap-x-2 gap-y-4 md:gap-8 px-5">
         {[...Array(4)].map((_, index) => (
           <PrimaryCard 
             key={index} 
