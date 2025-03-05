@@ -17,13 +17,13 @@ const PrimaryCard: React.FC<PrimaryCardProps> = ({
   icon 
 }) => {
   return (
-    <div className="bg-white border-2 w-fit p-4 rounded-md sm:h-50 md:h-35 flex flex-col gap-5">
+    <div className="bg-white border-2 w-fit p-4 rounded-md sm:h-50 md:h-30 flex flex-col gap-5">
       <div className="flex flex-col gap-2">
         <div className="flex items-center gap-2">
           <Image src={icon} alt="Icon" width={width} height={height} /> 
           <h1 className="font-medium sm:base md:text-2xl">{title}</h1>
         </div>
-        <p className="sm:text-sm md:text-lg text-black sm:w-60 md:w-75">
+        <p className="text-xs md:text-lg text-black w-35 md:w-65">
           {description}
         </p>
       </div>
