@@ -1,12 +1,12 @@
 "use client";
 
 import React from "react";
-import useBreakpoint from "@/Hooks/useBreakpoint";
+// import useBreakpoint from "@/Hooks/useBreakpoint";
 import { Images } from "lucide-react";
 import Link from "next/link";
 
 const GaleryAttention = () => {
-  const breakpoint = useBreakpoint();
+  // const breakpoint = useBreakpoint();
   return (
     <div>
       <div className="flex flex-col gap-y-5 h-full justify-center">
