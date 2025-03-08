@@ -31,7 +31,7 @@ export default function Home() {
   const breakpoint = useBreakpoint();
 
   return (
-    <div className="flex py-14 flex-col gap-5">
+    <div className="flex pt-14 flex-col gap-5">
       <div className="flex flex-col gap-5">
         <div className="landingPage flex-col px-10 justify-center gap-2 flex w-full h-100 md:h-120">
           <div className="bg-[#143D60]/50 w-fit h-fit p-3 backdrop-blur-md rounded-md">
@@ -58,18 +58,20 @@ export default function Home() {
         ))}
       </div>
 
-      <div className="flex-wrap flex gap-8 py-10 md:gap-8 bg-white h-fit w-full px-5 flex-col">
-        <h1 className="text-3xl font-semibold">Our Gallery</h1>
-        <div className="w-fit flex flex-wrap gap-2 md:gap-8 gap-y-3">
-          {displayPictures.map((items, index) => (
-            <ActionCard
-              key={index}
-              image={items.image}
-              judul={items.title}
-              description="Gallery description"
-            />
-          ))}
-          {breakpoint > 1350 && <GaleryAttention />}
+      <div className="bg-white h-fit w-full px-5">
+        <div className="flex-wrap flex gap-8 py-10 md:gap-8 flex-col">
+          <h1 className="text-3xl font-semibold">Our Gallery</h1>
+          <div className="w-fit flex flex-wrap gap-2 md:gap-8 gap-y-3">
+            {displayPictures.map((items, index) => (
+              <ActionCard
+                key={index}
+                image={items.image}
+                judul={items.title}
+                description="Gallery description"
+              />
+            ))}
+            {breakpoint > 1350 && <GaleryAttention />}
+          </div>
         </div>
       </div>
     </div>
