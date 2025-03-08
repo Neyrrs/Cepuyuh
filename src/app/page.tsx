@@ -69,7 +69,7 @@ export default function Home() {
               description="Gallery description"
             />
           ))}
-          {breakpoint >= 768 && breakpoint <= 1920 && <GaleryAttention />}
+          {breakpoint > 1350 && <GaleryAttention />}
         </div>
       </div>
     </div>
