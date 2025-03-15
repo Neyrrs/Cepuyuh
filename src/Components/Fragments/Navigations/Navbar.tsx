@@ -23,11 +23,11 @@ const Navbar = () => {
           </Link>
         </div>
         {(width >= 768 && (
-          <div className="px-4 flex-1 text-lg flex justify-around gap-5">
-            <p>Galery</p>
-            <p>About</p>
-            <p>Letters</p>
-            <p>Contact</p>
+          <div className="px-4 flex-1 text-lg flex justify-around gap-5 cursor-pointer">
+            <Link href={""}>Galery</Link>
+            <Link href={""}>About</Link>
+            <Link href={""}>Letters</Link>
+            <Link href={""}>Contact</Link>
           </div>
         )) ||
           (width <= 768 && (

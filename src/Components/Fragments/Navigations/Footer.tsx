@@ -9,8 +9,8 @@ const Footer = () => {
   const isMobile = width < 768;
   const linkArray = [
     { url: "https://www.instagram.com/dwonvy/", username: "Dwonvy" },
-    { url: "https://github.com/rrafifv", username: "rrafifv" },
-    { url: "https://github.com/rhmsyaf", username: "rhmsyaf" },
+    { url: "https://www.instagram.com/rrafifv", username: "rrafifv" },
+    { url: "https://www.instagram.com/rhmsyaf", username: "rhmsyaf" },
   ];
 
   return (
@@ -48,14 +48,14 @@ const Footer = () => {
             <p className="text-xl font-bold">Contact</p>
             <a
               href="https://github.com/Neyrrs"
-              className="flex items-center gap-2 text-gray-400"
+              className="flex items-center gap-2 text-gray-400 hover:text-white"
             >
               <Github size={18} />
               <p className="text-sm"> Neyrrs </p>
             </a>
             <a
               href="mailto:neyrworks@gmail.com"
-              className="flex items-center gap-2 text-gray-400"
+              className="flex items-center gap-2 text-gray-400 hover:text-white"
             >
               <Mail size={18} />
               <p className="text-sm"> neyrworks@gmail.com </p>
@@ -69,7 +69,7 @@ const Footer = () => {
                   <a
                     key={index}
                     href={link.url}
-                    className="flex items-center gap-2 text-gray-400"
+                    className="flex items-center gap-2 hover:text-white text-gray-400"
                   >
                     <Instagram size={18} />
                     <p className="text-sm"> {link.username} </p>

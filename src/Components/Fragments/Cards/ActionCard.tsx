@@ -19,7 +19,7 @@ const ActionCard: React.FC<ActionCardProps> = ({
 
   return (
     <div className="border-2 border-black bg-white pb-3 rounded-md h-fit gap-5">
-      <div className="h-35 md:h-65 w-75 bg-gray-400">
+      <div className={`h-35 md:h-65 w-75 bg-gray-400`}>
         <img src={image} alt="Gallery" className="w-full h-full object-cover" />
       </div>
       <div className="flex flex-col px-3 py-1 gap-y-1 w-45 md:w-75">

@@ -61,7 +61,7 @@ export default function Home() {
       <div className="bg-white h-fit w-full px-5">
         <div className="flex-wrap flex gap-8 py-10 md:gap-8 flex-col">
           <h1 className="text-3xl font-semibold">Our Gallery</h1>
-          <div className="w-fit flex flex-wrap gap-2 md:gap-8 gap-y-3">
+          <div className={`w-fit flex flex-wrap gap-2 md:gap-8 gap-y-3 ${breakpoint <= 750 ? "justify-center" : ""}`}>
             {displayPictures.map((items, index) => (
               <ActionCard
                 key={index}
