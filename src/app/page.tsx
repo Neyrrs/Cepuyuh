@@ -28,6 +28,28 @@ export default function Home() {
       image: "lapangan.jpg",
     },
   ];
+  const characterCard = [
+    {
+      icon: "/globe.svg",
+      title: "Relationship",
+      desc: "We are so close to called as a best friend"
+    },
+    {
+      icon: "/globe.svg",
+      title: "Cheerfull",
+      desc: "We are so cheerfull to called as a best friend"
+    },
+    {
+      icon: "/globe.svg",
+      title: "Relationship",
+      desc: "We are so close to called as a best friend"
+    },
+    {
+      icon: "/globe.svg",
+      title: "Cheerfull",
+      desc: "We are so cheerfull to called as a best friend"
+    },
+  ]
   const breakpoint = useBreakpoint();
 
   return (
@@ -45,15 +67,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex-wrap h-fit flex gap-x-2 gap-y-4 md:gap-5 px-5">
-        {[...Array(4)].map((_, index) => (
+      <div className={`flex-wrap h-fit flex gap-x-2 gap-y-4 md:gap-5 px-5 ${breakpoint >= 750 ? "justify-between" : "justify-evenly"}`}>
+        {characterCard.map((item, index) => (
           <PrimaryCard
             key={index}
-            icon="/globe.svg"
+            icon={item.icon}
             width={25}
             height={25}
-            title={`Card ${index + 1}`}
-            description="This is a description"
+            title={item.title}
+            description={item.desc}
           />
         ))}
       </div>

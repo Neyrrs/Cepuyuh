@@ -21,7 +21,7 @@ const PrimaryCard: React.FC<PrimaryCardProps> = ({
       <div className="flex flex-col gap-2">
         <div className="flex items-center gap-2">
           <Image src={icon} alt="Icon" width={width} height={height} /> 
-          <h1 className="font-medium sm:base md:text-2xl">{title}</h1>
+          <h1 className="font-medium sm:base md:text-xl">{title}</h1>
         </div>
         <p className="text-xs md:text-lg text-black w-35 md:w-65">
           {description}
